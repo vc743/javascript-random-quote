@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap");
+
+/*Font
+font-family: 'Outfit', sans-serif;
+*/
+
+:root {
+  --blue-Hepatica: #6466e9;
+  --dark-Knight: #111729;
+  --midnight-Express: #20293a;
+  --property-color: #4a5567;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+blockquote{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero {
+  background-color: var(--dark-Knight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  background-color: var(--midnight-Express);
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 1.5em;
+  background-image: url(/images/bg-image-random-quote.svg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.author {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.tags-container {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  color: var(--blue-Hepatica);
+  border: 2px solid var(--blue-Hepatica);
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+
+.quote {
+  color: var(--property-color);
+  font-size: 2rem;
+}
+.quote::before {
+  content: "\201C";
+}
+.quote::after {
+  content: "\201D";
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.generate-quote {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 10px 0 0 10px;
+  border: 2px solid var(--midnight-Express);
+}
+
+.copy-btn {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  border: 0;
+  border-top: 2px solid var(--midnight-Express);
+  border-right: 2px solid var(--midnight-Express);
+  border-bottom: 2px solid var(--midnight-Express);
+}
